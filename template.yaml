@@ -22,18 +22,18 @@ Resources:
       Description: Boto3 Layer
       ContentUri: ./dependencies/boto3/
       CompatibleRuntimes:
-         - python3.11
+         - python3.12
       CompatibleArchitectures:
          - x86_64 
     Metadata:
-      BuildMethod: python3.11
+      BuildMethod: python3.12
       BuildArchitecture: x86_64
   AmazonBedrockFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: bedrock/
       Handler: app.lambda_handler
-      Runtime: python3.11
+      Runtime: python3.12
       Architectures:
       - x86_64 
       Policies:
